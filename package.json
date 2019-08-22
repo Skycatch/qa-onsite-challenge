@@ -1,0 +1,26 @@
+{
+  "name": "lookup-server",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.17.1",
+    "sql.js": "1.0.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js",
+    "setup": "npm i && cd client && npm i",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.4",
+    "babel-eslint": "10.0.1",
+    "concurrently": "4.1.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3"
+  }
+}
